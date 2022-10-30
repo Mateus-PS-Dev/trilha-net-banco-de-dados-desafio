@@ -55,7 +55,7 @@ ORDER BY Duracao
 
 --7
 
--- A Imagem da foto propõem dessa forma:
+-- A Imagem da foto propï¿½em dessa forma:
 SElECT
 	Ano,
 	COUNT(*) Quantidade
@@ -64,13 +64,13 @@ GROUP BY Ano
 ORDER BY Quantidade Desc
 
 /*
-	Mas não consegui fazer nada relacionado a proposta pois
-	não consegui encontrar uma lógica para ordenar pela Duração.
+	Mas nï¿½o consegui fazer nada relacionado a proposta pois
+	nï¿½o consegui encontrar uma lï¿½gica para ordenar pela Duraï¿½ï¿½o.
 */
 
 --8
 
--- A Imagem da foto propõem dessa forma:
+-- A Imagem da foto propï¿½em dessa forma:
 SElECT
 	Id,
 	PrimeiroNome,
@@ -122,7 +122,7 @@ FROM
 	FilmesGenero
 INNER JOIN Filmes ON FilmesGenero.IdFilme = Filmes.Id
 INNER JOIN Generos ON FilmesGenero.IdGenero = Generos.Id
-WHERE Genero = 'Mistério'
+WHERE Genero = 'Mistï¿½rio'
 
 --12
 
@@ -142,7 +142,8 @@ SELECT
 	Filmes.Nome,
 	AtorAtrizPrincipal =
 		Atores.PrimeiroNome + ' ' + Atores.UltimoNome,
-	Como = ElencoFilme.Papel 
+	Como = 
+		ElencoFilme.Papel 
 FROM 
 	ElencoFilme
 INNER JOIN Filmes ON ElencoFilme.IdFilme = Filmes.Id
