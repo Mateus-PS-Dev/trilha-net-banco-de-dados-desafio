@@ -90,4 +90,6 @@ Você deverá criar diversas consultas, com o objetivo de retornar os dados a se
 
 ![Exercicio 12](Imagens/12.png)
 
+## CONCLUSÃO!!
+
 Comandos dentro do arquivo [Conclusão.sql](Conclusão.sql)
